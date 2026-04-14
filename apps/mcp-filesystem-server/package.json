@@ -1,0 +1,28 @@
+{
+  "name": "@firecrawl/mcp-filesystem-server",
+  "version": "0.1.0",
+  "description": "A Model Context Protocol (MCP) server that exposes file system operations as tools for AI agents",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-filesystem-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
