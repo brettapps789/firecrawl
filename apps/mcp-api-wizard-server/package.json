@@ -1,0 +1,28 @@
+{
+  "name": "@firecrawl/mcp-api-wizard-server",
+  "version": "0.1.0",
+  "description": "A Model Context Protocol (MCP) server that acts as an API Wizard — helping AI agents design, document, validate, mock, and interact with REST APIs",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-api-wizard-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}
