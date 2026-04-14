@@ -81,7 +81,7 @@ Firecrawl offers three plans:
 …
 ```
 
-### Customising the model
+### Customizing the model
 
 Edit `HF_MODEL_ID` in the script to use a different model:
 
